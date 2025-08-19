@@ -1,6 +1,6 @@
 #!/bin/bash
 
-configuration_file=../pre_training/ssl/csco/code/configuration_files/CSCO.cfg
+configuration_file=../pre_training/ssl/hr-cs-co/code/configuration_files/CSCO.cfg
 encoder_model=unet
 repetition=rep1
 

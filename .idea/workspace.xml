@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe31b34b-433a-4030-af23-f6f54c1085b2" name="Changes" comment="" />
+    <list default="true" id="fe31b34b-433a-4030-af23-f6f54c1085b2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pre-training/ssl/hr-cs-co/slurm/train_contrastive_learning.sh" beforeDir="false" afterPath="$PROJECT_DIR$/pre-training/ssl/hr-cs-co/slurm/train_contrastive_learning.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pre-training/ssl/hr-cs-co/slurm/train_cross_stain_prediction.sh" beforeDir="false" afterPath="$PROJECT_DIR$/pre-training/ssl/hr-cs-co/slurm/train_cross_stain_prediction.sh" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +57,7 @@
       <updated>1755611609719</updated>
       <workItem from="1755611611312" duration="920000" />
       <workItem from="1755613474443" duration="893000" />
-      <workItem from="1755614406222" duration="42000" />
+      <workItem from="1755614406222" duration="340000" />
     </task>
     <servers />
   </component>
