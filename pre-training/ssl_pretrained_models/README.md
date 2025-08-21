@@ -1,1 +1,0 @@
-# improve_kidney_glomeruli_segmentation
