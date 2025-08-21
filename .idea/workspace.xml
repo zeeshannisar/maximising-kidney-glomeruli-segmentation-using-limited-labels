@@ -5,114 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe31b34b-433a-4030-af23-f6f54c1085b2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/run_unet_with_csco.sh.sh" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/run_unet_with_hr-cs-co.sh.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/.ipynb_checkpoints/Deep residual UNet-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/.ipynb_checkpoints/Deep residual UNet-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/apply_unet.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/apply_unet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/augment_patches.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/augment_patches.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/augmentation/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/augmentation/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/augmentation/affine_transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/augmentation/affine_transform.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/augmentation/blur_transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/augmentation/blur_transform.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/augmentation/channel_transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/augmentation/channel_transform.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/augmentation/elastic_transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/augmentation/elastic_transform.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/augmentation/enhance_transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/augmentation/enhance_transform.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/augmentation/live_augmentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/augmentation/live_augmentation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/augmentation/noise_transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/augmentation/noise_transform.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/augmentation/smote.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/augmentation/smote.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/augmentation/stain_transfer_transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/augmentation/stain_transfer_transform.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/augmentation/stain_transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/augmentation/stain_transform.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/average_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/average_results.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/background_tissue_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/background_tissue_detection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/check_partially_trained.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/check_partially_trained.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/configuration_files/finetune/hubmap.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/configuration_files/finetune/hubmap.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/configuration_files/finetune/kpis.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/configuration_files/finetune/kpis.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/configuration_files/finetune/sysmifta.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/configuration_files/finetune/sysmifta.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/configuration_files/fixedfeatures/sysmifta.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/configuration_files/fixedfeatures/sysmifta.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/create_ground_truths.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/create_ground_truths.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/cytomine.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/cytomine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/cytomine_job.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/cytomine_job.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/models/annotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/models/annotation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/models/collection.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/models/collection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/models/image.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/models/image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/models/imagegroup.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/models/imagegroup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/models/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/models/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/models/ontology.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/models/ontology.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/models/project.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/models/project.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/models/property.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/models/property.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/models/social.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/models/social.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/models/software.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/models/software.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/models/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/models/storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/models/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/utilities/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/utilities/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/utilities/geometry.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/utilities/geometry.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/utilities/http.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/utilities/http.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/utilities/logging.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/utilities/logging.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/utilities/reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/utilities/reader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/utilities/version.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/utilities/version.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/cytomine/utilities/wholeslide.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/cytomine/utilities/wholeslide.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/delete_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/delete_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/downsample_patches.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/downsample_patches.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/downsample_patches_zeeshan.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/downsample_patches_zeeshan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/extract_masks_from_cytomine.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/extract_masks_from_cytomine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/extract_patches.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/extract_patches.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/misc_functions/apply_gan_clean.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/misc_functions/apply_gan_clean.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/misc_functions/augment_patches_gan.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/misc_functions/augment_patches_gan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/misc_functions/clean_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/misc_functions/clean_detection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/misc_functions/combine_stain_trainingdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/misc_functions/combine_stain_trainingdata.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/misc_functions/extract_detected_patches.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/misc_functions/extract_detected_patches.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/misc_functions/extract_glomeruli_density_stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/misc_functions/extract_glomeruli_density_stats.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/misc_functions/extract_glomeruli_patches.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/misc_functions/extract_glomeruli_patches.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/misc_functions/gan_clean.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/misc_functions/gan_clean.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/misc_functions/measure_glom_areas.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/misc_functions/measure_glom_areas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/misc_functions/optimise_unet_parameters_hyperas.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/misc_functions/optimise_unet_parameters_hyperas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/misc_functions/scikit_learn_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/misc_functions/scikit_learn_wrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/misc_scripts/copy_model.sh" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/misc_scripts/copy_model.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/optimise_unet_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/optimise_unet_parameters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/patch_extractors/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/patch_extractors/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/patch_extractors/centroid_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/patch_extractors/centroid_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/patch_extractors/extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/patch_extractors/extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/patch_extractors/extractor_unsupervised.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/patch_extractors/extractor_unsupervised.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/patch_extractors/random_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/patch_extractors/random_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/patch_extractors/uniform_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/patch_extractors/uniform_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/pixel_based_evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/pixel_based_evaluation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/precision_recall_curves.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/precision_recall_curves.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/rename_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/rename_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/rename_model_edited.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/rename_model_edited.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/reset_config_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/reset_config_files.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/resume_train_unet.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/resume_train_unet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/staintools/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/staintools/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/staintools/stain_augmentor.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/staintools/stain_augmentor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/staintools/stain_extractors/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/staintools/stain_extractors/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/staintools/stain_extractors/abc_stain_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/staintools/stain_extractors/abc_stain_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/staintools/stain_extractors/macenko_stain_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/staintools/stain_extractors/macenko_stain_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/staintools/stain_extractors/ruifrokjohnston_stain_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/staintools/stain_extractors/ruifrokjohnston_stain_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/staintools/stain_extractors/vahadane_stain_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/staintools/stain_extractors/vahadane_stain_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/staintools/stain_normalizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/staintools/stain_normalizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/staintools/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/staintools/utils/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/staintools/utils/brightness_standardizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/staintools/utils/brightness_standardizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/staintools/utils/misc_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/staintools/utils/misc_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/test_unet.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/test_unet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/train_threshold.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/train_threshold.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/train_unet.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/train_unet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/unet/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/unet/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/unet/callbacks.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/unet/callbacks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/unet/losses.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/unet/losses.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/unet/optimisers.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/unet/optimisers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/unet/unet_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/unet/unet_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/utils/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/utils/colourconv.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/utils/colourconv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/utils/config_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/utils/config_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/utils/data_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/utils/data_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/utils/evaluation_metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/utils/evaluation_metrics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/utils/filepath_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/utils/filepath_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/utils/forcedImageSvs.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/utils/forcedImageSvs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/utils/image_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/utils/image_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/utils/image_utils_new.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/utils/image_utils_new.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/utils/multiclass_downsampling.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/utils/multiclass_downsampling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_csco/code/utils/select_gpu.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/utils/select_gpu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../improve_kidney_glomeruli_segmentation/pre_training/ssl/byol/slurm/train_byol.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,23 +23,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHELLCHECK.PATH&quot;: &quot;I do mind&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/run/user/1000/gvfs/sftp:host=olivia,user=nisar/home/nisar/research/code/github/personal_implementations/maximising-kidney-glomeruli-segmentation-using-limited-labels/downstream_tasks/udagan&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHELLCHECK.PATH": "I do mind",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/run/user/1000/gvfs/sftp:host=olivia,user=nisar/home/nisar/research/code/github/personal_implementations/maximising-kidney-glomeruli-segmentation-using-limited-labels/downstream_tasks/udagan",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/downstream_tasks/udagan" />
@@ -160,8 +54,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-PY-252.23892.515" />
-        <option value="bundled-python-sdk-7e47963ff851-f0eec537fc84-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.23892.515" />
+        <option value="bundled-python-sdk-03e874896e21-d902c0275401-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.23892.439" />
       </set>
     </attachedChunks>
   </component>
@@ -175,7 +68,7 @@
       <workItem from="1755611611312" duration="920000" />
       <workItem from="1755613474443" duration="893000" />
       <workItem from="1755614406222" duration="459000" />
-      <workItem from="1755762048499" duration="5677000" />
+      <workItem from="1755762048499" duration="6156000" />
     </task>
     <servers />
   </component>
