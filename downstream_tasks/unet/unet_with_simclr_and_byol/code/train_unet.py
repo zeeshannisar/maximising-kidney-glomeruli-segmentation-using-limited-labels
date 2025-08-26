@@ -448,7 +448,7 @@ def derived_parameters(conf, arguments):
             conf['transferlearning.byol_model_path'] = pretrained_byol_model_path(conf)
         else:
             raise ValueError(
-                "Self-supervised learning based pretrained-models should be one of ['simclr', 'byol', 'csco']")
+                "Self-supervised learning based pretrained-models should be one of ['simclr', 'byol', 'hrcsco']")
 
         conf['detector.outputpath'] = os.path.join(conf['detector.modelpath'], conf['detector.modelname'],
                                                    conf['transferlearning.pretrained_ssl_model'])
@@ -511,7 +511,7 @@ if __name__ == '__main__':
     parser.add_argument('-r', '--reproducible', action='store_const', default=False, const=True,
                         help='set seeds to give reproducible results')
 
-    parser.add_argument('-pm', '--pretrained_ssl_model', type=str, default='simclr', help='None, simclr | byol | csco')
+    parser.add_argument('-pm', '--pretrained_ssl_model', type=str, default='simclr', help='None, simclr | byol | hrcsco')
     parser.add_argument('-pmt', '--pretrained_model_trainable', default=True,
                         type=lambda x: str(x).lower() in ['true', '1', 'yes'], help='if finetune: True | '
                                                                                     'if fixedfeatures: False')

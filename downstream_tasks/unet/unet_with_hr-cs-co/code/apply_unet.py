@@ -265,22 +265,22 @@ def _process_patch(UNet, diff, imgpatch, inp_patch_size, otp_patch_size, stride,
                         pass
 
             patch = image_utils.image_colour_convert(patch, config['detector.colour_mode'])
-            if config['transferlearning.finetune'] and config['transferlearning.finetunemode'] == "SSL" and config['transferlearning.pretrained_ssl_model'] == "csco":
+            if config['transferlearning.finetune'] and config['transferlearning.finetunemode'] == "SSL" and config['transferlearning.pretrained_ssl_model'] == "hrcsco":
                 patch_H, patch_O = stain_transform.separate(patch, staincode=config["general.staincode"])
 
             if standardise_patches:
-                if config['transferlearning.finetune'] and config['transferlearning.finetunemode'] == "SSL" and config['transferlearning.pretrained_ssl_model'] == "csco":
+                if config['transferlearning.finetune'] and config['transferlearning.finetunemode'] == "SSL" and config['transferlearning.pretrained_ssl_model'] == "hrcsco":
                     patch_H, patch_O = data_utils.standardise_sample(patch_H), data_utils.standardise_sample(patch_O)
                 else:
                     patch = data_utils.standardise_sample(patch)
 
             if normalise_patches:
-                if config['transferlearning.finetune'] and config['transferlearning.finetunemode'] == "SSL" and config['transferlearning.pretrained_ssl_model'] == "csco":
+                if config['transferlearning.finetune'] and config['transferlearning.finetunemode'] == "SSL" and config['transferlearning.pretrained_ssl_model'] == "hrcsco":
                     patch_H, patch_O = data_utils.normalise_sample(patch_H, mean, stddev), data_utils.normalise_sample(patch_O, mean, stddev)
                 else:
                     patch = data_utils.normalise_sample(patch, mean, stddev)
 
-            if config['transferlearning.finetune'] and config['transferlearning.finetunemode'] == "SSL" and config['transferlearning.pretrained_ssl_model'] == "csco":
+            if config['transferlearning.finetune'] and config['transferlearning.finetunemode'] == "SSL" and config['transferlearning.pretrained_ssl_model'] == "hrcsco":
                 patch_batch_H[c, :, :, :] = patch_H
                 patch_batch_O[c, :, :, :] = patch_O
                 patch_batch[c, :, :, :] = patch
@@ -294,7 +294,7 @@ def _process_patch(UNet, diff, imgpatch, inp_patch_size, otp_patch_size, stride,
             if c == batch_size:
                 # Non threaded version
                 sys.stdout.write('x: {:^6}, y: {:^6}\r'.format(patchx + j, patchy + i))
-                if config['transferlearning.finetune'] and config['transferlearning.finetunemode'] == "SSL" and config['transferlearning.pretrained_ssl_model'] == "csco":
+                if config['transferlearning.finetune'] and config['transferlearning.finetunemode'] == "SSL" and config['transferlearning.pretrained_ssl_model'] == "hrcsco":
                     preds = UNet.predict([patch_batch_H, patch_batch_O])
                 else:
                     preds = UNet.predict(patch_batch)
@@ -309,7 +309,7 @@ def _process_patch(UNet, diff, imgpatch, inp_patch_size, otp_patch_size, stride,
                 first_run = False
                 c = 0
 
-    if config['transferlearning.finetune'] and config['transferlearning.finetunemode'] == "SSL" and config['transferlearning.pretrained_ssl_model'] == "csco":
+    if config['transferlearning.finetune'] and config['transferlearning.finetunemode'] == "SSL" and config['transferlearning.pretrained_ssl_model'] == "hrcsco":
         return segmentation, segmentation_count, patch_batch, patch_batch_H, patch_batch_O, patch_coords, t, c, first_run
     else:
         return segmentation, segmentation_count, patch_batch, patch_coords, t, c, first_run
@@ -420,7 +420,7 @@ def apply_model_from_disk(tmpDir, imageList, config, modelfilename, modeltimesta
             if config['detector.colour_mode'] == 'rgb':
                 patch_batch = numpy.zeros(shape=(batch_size, inp_patch_size[0], inp_patch_size[1], imagesize[2]),
                                           dtype=UNet.outputs[0].dtype.name)
-                if config['transferlearning.finetune'] and config['transferlearning.finetunemode'] == "SSL" and config['transferlearning.pretrained_ssl_model'] == "csco":
+                if config['transferlearning.finetune'] and config['transferlearning.finetunemode'] == "SSL" and config['transferlearning.pretrained_ssl_model'] == "hrcsco":
                     patch_batch_H = numpy.zeros(shape=(batch_size, inp_patch_size[0], inp_patch_size[1], 1),
                                                 dtype=UNet.outputs[0].dtype.name)
                     patch_batch_O = numpy.zeros(shape=(batch_size, inp_patch_size[0], inp_patch_size[1], 1),
@@ -454,7 +454,7 @@ def apply_model_from_disk(tmpDir, imageList, config, modelfilename, modeltimesta
                     p.start()
 
                     if not first_patch:
-                        if config['transferlearning.finetune'] and config['transferlearning.finetunemode'] == "SSL" and config['transferlearning.pretrained_ssl_model'] == "csco":
+                        if config['transferlearning.finetune'] and config['transferlearning.finetunemode'] == "SSL" and config['transferlearning.pretrained_ssl_model'] == "hrcsco":
                             segmentation, segmentation_count, patch_batch, patch_batch_H, patch_batch_O, \
                                 patch_coords, t, c, first_run = _process_patch(UNet, diff, imgpatch, inp_patch_size,
                                                                                otp_patch_size, stride, batch_size,
@@ -486,7 +486,7 @@ def apply_model_from_disk(tmpDir, imageList, config, modelfilename, modeltimesta
                 patchx = p.x
                 patchy = p.y
 
-                if config['transferlearning.finetune'] and config['transferlearning.finetunemode'] == "SSL" and config['transferlearning.pretrained_ssl_model'] == "csco":
+                if config['transferlearning.finetune'] and config['transferlearning.finetunemode'] == "SSL" and config['transferlearning.pretrained_ssl_model'] == "hrcsco":
                     segmentation, segmentation_count, patch_batch, patch_batch_H, patch_batch_O, \
                         patch_coords, t, c, first_run = _process_patch(UNet, diff, imgpatch, inp_patch_size,
                                                                        otp_patch_size, stride, batch_size, patch_batch, patch_coords,
@@ -509,7 +509,7 @@ def apply_model_from_disk(tmpDir, imageList, config, modelfilename, modeltimesta
                                                                        threshold, config['general.datapath'])
 
             if c > 0:
-                if config['transferlearning.finetune'] and config['transferlearning.finetunemode'] == "SSL" and config['transferlearning.pretrained_ssl_model'] == "csco":
+                if config['transferlearning.finetune'] and config['transferlearning.finetunemode'] == "SSL" and config['transferlearning.pretrained_ssl_model'] == "hrcsco":
                     preds = UNet.predict([patch_batch_H[0:c, :, :, :], patch_batch_O[0:c, :, :, :]])
                 else:
                     preds = UNet.predict(patch_batch[0:c, :, :, :])
@@ -660,10 +660,10 @@ def derived_parameters(conf, arguments):
         conf['transferlearning.pretrained_ssl_model'] = arguments.pretrained_ssl_model.lower()
         conf['transferlearning.pretrained_model_trainable'] = arguments.pretrained_model_trainable
         
-        if 'csco' in conf['transferlearning.pretrained_ssl_model']:
+        if 'hrcsco' in conf['transferlearning.pretrained_ssl_model']:
             conf['transferlearning.csco_model_path'] = pretrained_csco_model_path(conf)
         else:
-            raise ValueError("Self-supervised learning based pretrained-models should be one of ['csco']")
+            raise ValueError("Self-supervised learning based pretrained-models should be one of ['hrcsco']")
 
         conf['detector.outputpath'] = os.path.join(conf['detector.modelpath'], conf['detector.modelname'],
                                                    conf['transferlearning.pretrained_ssl_model'])

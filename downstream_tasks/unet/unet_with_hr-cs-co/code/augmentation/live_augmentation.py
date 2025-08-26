@@ -1395,7 +1395,7 @@ class DirectoryIterator(Iterator):
         return mean.tolist(), std.tolist(), class_weights
 
     def _get_batches_of_transformed_samples(self, index_array):
-        if self.pretrained_models == 'csco':
+        if self.pretrained_models == 'hrcsco':
                 batch_x_H_shape = (len(index_array),) + self.img_target_size + (1,)
                 batch_x_O_shape = (len(index_array),) + self.img_target_size + (1,)
                 batch_x_H = numpy.zeros(batch_x_H_shape, dtype=K.floatx())
@@ -1430,7 +1430,7 @@ class DirectoryIterator(Iterator):
             x = crop_image(x, self.img_target_size, data_format=self.data_format)
             y = crop_image(y, self.gt_target_size, data_format=self.data_format)
 
-            if self.pretrained_models == 'csco':
+            if self.pretrained_models == 'hrcsco':
                 x_H, x_O = stain_transform.separate(x, staincode=staincode)
                 x_H, x_O = self.image_data_generator.standardize(x_H), self.image_data_generator.standardize(x_O)
             else:
@@ -1439,7 +1439,7 @@ class DirectoryIterator(Iterator):
             if self.categoricaltarget:
                 y = to_categorical(y, num_classes=self.nb_classes)
 
-            if self.pretrained_models == 'csco':
+            if self.pretrained_models == 'hrcsco':
                 batch_x_H[i] = x_H.astype(K.floatx())
                 batch_x_O[i] = x_O.astype(K.floatx())
             else:
@@ -1447,7 +1447,7 @@ class DirectoryIterator(Iterator):
 
             batch_y[i] = y.astype(K.floatx())
 
-        if self.pretrained_models == 'csco':
+        if self.pretrained_models == 'hrcsco':
             return (batch_x_H, batch_x_O), batch_y
         else:
             return batch_x, batch_y

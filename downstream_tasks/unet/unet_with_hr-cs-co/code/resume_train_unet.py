@@ -242,7 +242,7 @@ def resumetrainunet(number_of_classes, class_weights, epochs, output_path, label
 def pretrained_csco_model_path(conf):
     return os.path.join(conf['general.workpath'], conf['general.additionalpath'], 'saved_models/postdoc',
                         'improve_kidney_glomeruli_segmentation/sysmifta/pretraining/final_selected_models',
-                        f'csco/csco_unet_encoder_{conf["general.staincode"]}.hdf5')
+                        f'hrcsco/csco_unet_encoder_{conf["general.staincode"]}.hdf5')
 
 
 def derived_parameters(conf, arguments):
@@ -298,10 +298,10 @@ def derived_parameters(conf, arguments):
         conf['transferlearning.pretrained_ssl_model'] = arguments.pretrained_ssl_model.lower()
         conf['transferlearning.pretrained_model_trainable'] = arguments.pretrained_model_trainable
 
-        if 'csco' in conf['transferlearning.pretrained_ssl_model']:
+        if 'hrcsco' in conf['transferlearning.pretrained_ssl_model']:
             conf['transferlearning.csco_model_path'] = pretrained_csco_model_path(conf)
         else:
-            raise ValueError("Self-supervised learning based pretrained-models should be 'csco'")
+            raise ValueError("Self-supervised learning based pretrained-models should be 'hrcsco'")
 
         conf['detector.outputpath'] = os.path.join(conf['detector.modelpath'], conf['detector.modelname'],
                                                    conf['transferlearning.pretrained_ssl_model'])
@@ -324,7 +324,7 @@ if __name__ == '__main__':
     parser.add_argument('-e', '--epoch', type=int, help='epoch to resume training (0 indexed)')
     parser.add_argument('-v', '--valloss', type=float, help='best valloss found so far')
 
-    parser.add_argument('-pm', '--pretrained_ssl_model', type=str, default='csco')
+    parser.add_argument('-pm', '--pretrained_ssl_model', type=str, default='hrcsco')
     parser.add_argument('-pmt', '--pretrained_model_trainable', default=True,
                         type=lambda x: str(x).lower() in ['true', '1', 'yes'])
 

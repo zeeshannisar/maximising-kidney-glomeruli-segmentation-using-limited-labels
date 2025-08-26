@@ -369,7 +369,7 @@ def trainunet(config, number_of_classes, class_weights, label=None):
     with open(os.path.join(config['detector.outputpath'], "models", "summary." + label + ".txt"), 'w') as f:
         UNet.summary(print_fn=lambda x: f.write(x + '\n'))
 
-    if pretrained_model == 'csco':
+    if pretrained_model == 'hrcsco':
         (image_x_H, image_x_O), mask = train_flow.next()
         print(f"image_x_H: {image_x_H.shape} --- image_x_O: {image_x_O.shape} --- mask: {mask.shape}")
         images_with_labels_plot(image_x_H, image_x_O, mask, config['detector.outputpath'], name="data_samples.png")
@@ -394,7 +394,7 @@ def trainunet(config, number_of_classes, class_weights, label=None):
 def pretrained_csco_model_path(conf):
     return os.path.join(conf['general.workpath'], conf['general.additionalpath'], 'saved_models/postdoc',
                             'improve_kidney_glomeruli_segmentation/sysmifta/pretraining/final_selected_models',
-                            f'csco/csco_unet_encoder_{conf["general.staincode"]}.hdf5')
+                            f'hrcsco/csco_unet_encoder_{conf["general.staincode"]}.hdf5')
 
 def derived_parameters(conf, arguments):
     conf['detector.patchstrategy'] = arguments.patch_strategy
@@ -450,10 +450,10 @@ def derived_parameters(conf, arguments):
         conf['transferlearning.pretrained_ssl_model'] = arguments.pretrained_ssl_model.lower()
         conf['transferlearning.pretrained_model_trainable'] = arguments.pretrained_model_trainable
         
-        if 'csco' in conf['transferlearning.pretrained_ssl_model']:
+        if 'hrcsco' in conf['transferlearning.pretrained_ssl_model']:
             conf['transferlearning.csco_model_path'] = pretrained_csco_model_path(conf)
         else:
-            raise ValueError("Self-supervised learning based pretrained-models should be 'csco'")
+            raise ValueError("Self-supervised learning based pretrained-models should be 'hrcsco'")
 
         conf['detector.outputpath'] = os.path.join(conf['detector.modelpath'], conf['detector.modelname'],
                                                    conf['transferlearning.pretrained_ssl_model'])
@@ -506,7 +506,7 @@ def setreproducibility():
 
 if __name__ == '__main__':
 
-    parser = argparse.ArgumentParser(description='Train unet with csco.')
+    parser = argparse.ArgumentParser(description='Train unet with hrcsco.')
 
     parser.add_argument('-c', '--configfile', type=str, default='configuration_files/finetune/hubmap.cfg')
     parser.add_argument('-l', '--label', type=str, default='test_finetune_unet_hubmap')
@@ -514,7 +514,7 @@ if __name__ == '__main__':
     parser.add_argument('-r', '--reproducible', action='store_const', default=False, const=True,
                         help='set seeds to give reproducible results')
 
-    parser.add_argument('-pm', '--pretrained_ssl_model', type=str, default='csco')
+    parser.add_argument('-pm', '--pretrained_ssl_model', type=str, default='hrcsco')
     parser.add_argument('-pmt', '--pretrained_model_trainable', default=True, 
                         type=lambda x: str(x).lower() in ['true', '1', 'yes'])
 

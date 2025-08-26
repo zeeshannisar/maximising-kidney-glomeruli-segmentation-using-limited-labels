@@ -516,7 +516,7 @@ def pretrained_byol_model_path(conf):
 
 def pretrained_csco_model_path(conf):
     return os.path.join(conf['general.homepath'], 'code/improve_kidney_glomeruli_segmentation/pre_training',
-                        'ssl_pretrained_models/csco/csco_unet_encoder_{}.hdf5'.format(conf['general.staincode']))
+                        'ssl_pretrained_models/hrcsco/csco_unet_encoder_{}.hdf5'.format(conf['general.staincode']))
 
 
 def derived_parameters(conf, arguments):
@@ -570,10 +570,10 @@ def derived_parameters(conf, arguments):
             conf['transferlearning.simclr_model_path'] = pretrained_simclr_model_path(conf)
         elif 'byol' in conf['transferlearning.pretrained_ssl_model']:
             conf['transferlearning.byol_model_path'] = pretrained_byol_model_path(conf)
-        elif 'csco' in conf['transferlearning.pretrained_ssl_model']:
+        elif 'hrcsco' in conf['transferlearning.pretrained_ssl_model']:
             conf['transferlearning.csco_model_path'] = pretrained_csco_model_path(conf)
         else:
-            raise ValueError("Self-supervised learning based pretrained-models should be one of ['simclr', 'byol', 'csco']")
+            raise ValueError("Self-supervised learning based pretrained-models should be one of ['simclr', 'byol', 'hrcsco']")
 
     if conf['transferlearning.finetune']:
         conf['detector.outputpath'] = os.path.join(conf['detector.modelpath'], conf['detector.modelname'],
@@ -609,7 +609,7 @@ if __name__ == '__main__':
                         help='test threshold levels')
     parser.add_argument('-g', '--gpu', type=str, help='specify which GPU to use')
 
-    parser.add_argument('-pm', '--pretrained_ssl_model', type=str, help='simclr | byol | csco | none')
+    parser.add_argument('-pm', '--pretrained_ssl_model', type=str, help='simclr | byol | hrcsco | none')
     parser.add_argument('-pmt', '--pretrained_model_trainable', default=False,
                         type=lambda x: str(x).lower() in ['true', '1', 'yes'])
 

@@ -555,10 +555,10 @@ def derived_parameters(conf, arguments):
         conf['transferlearning.pretrained_ssl_model'] = arguments.pretrained_ssl_model.lower()
         conf['transferlearning.pretrained_model_trainable'] = arguments.pretrained_model_trainable
         
-        if 'csco' in conf['transferlearning.pretrained_ssl_model']:
+        if 'hrcsco' in conf['transferlearning.pretrained_ssl_model']:
             conf['transferlearning.csco_model_path'] = pretrained_csco_model_path(conf)
         else:
-            raise ValueError("Self-supervised learning based pretrained-models should be one of ['csco']")
+            raise ValueError("Self-supervised learning based pretrained-models should be one of ['hrcsco']")
 
         conf['detector.outputpath'] = os.path.join(conf['detector.modelpath'], conf['detector.modelname'],
                                                    conf['transferlearning.pretrained_ssl_model'])

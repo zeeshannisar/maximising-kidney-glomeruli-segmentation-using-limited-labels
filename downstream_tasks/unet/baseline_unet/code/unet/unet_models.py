@@ -632,7 +632,7 @@ def unet_decoder_above_SSL(pretrained_models, inp_shape, nb_classes, depth=5, fi
                            pretrained_models['csco_model']['csco_O2H_model'].input], out, name='CSCO_based_UNet_model'),
                      inp_shape, otp_shape)
         else:
-            raise ValueError("Self-supervised learning based pretrained-models should be one of ['simclr', 'byol', 'csco']")
+            raise ValueError("Self-supervised learning based pretrained-models should be one of ['simclr', 'byol', 'hrcsco']")
 
     segmentation_model, inp_shape, otp_shape = unet_decoder(pretrained_models)
     return segmentation_model, inp_shape, otp_shape

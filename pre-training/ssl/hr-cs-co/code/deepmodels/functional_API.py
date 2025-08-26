@@ -269,11 +269,11 @@ class ProjectionHead:
 #
 # pretrained_model_path = "/home/nisar/phd/saved_models/SSL/Nephrectomy/CSCO/unet/02/rep1/cross_stain_prediction/models"
 #
-# csco = CSCO(input_shape_H=input_shape, input_shape_O=input_shape, pretrained_model_path=pretrained_model_path).model()
+# hrcsco = CSCO(input_shape_H=input_shape, input_shape_O=input_shape, pretrained_model_path=pretrained_model_path).model()
 # print("****************************************** CSCO ******************************************")
-# print(csco.summary())
+# print(hrcsco.summary())
 #
-# projection = MLP(input_shape=csco.output_shape[0][1:]).model()
+# projection = MLP(input_shape=hrcsco.output_shape[0][1:]).model()
 # print("****************************************** Projector ******************************************")
 # print(projection.summary())
 #

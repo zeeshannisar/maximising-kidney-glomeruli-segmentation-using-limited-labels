@@ -72,10 +72,10 @@ def derived_parameters(conf, arguments):
             conf['transferlearning.simclr_model_path'] = pretrained_simclr_model_path(conf)
         elif 'byol' in conf['transferlearning.pretrained_ssl_model']:
             conf['transferlearning.byol_model_path'] = pretrained_byol_model_path(conf)
-        elif 'csco' in conf['transferlearning.pretrained_ssl_model']:
+        elif 'hrcsco' in conf['transferlearning.pretrained_ssl_model']:
             conf['transferlearning.csco_model_path'] = pretrained_csco_model_path(conf)
         else:
-            raise ValueError("Self-supervised learning based pretrained-models should be one of ['simclr', 'byol', 'csco']")
+            raise ValueError("Self-supervised learning based pretrained-models should be one of ['simclr', 'byol', 'hrcsco']")
 
     if conf['transferlearning.finetune']:
         conf['detector.outputpath'] = os.path.join(conf['detector.modelpath'], conf['detector.modelname'],
