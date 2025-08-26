@@ -2,16 +2,6 @@
 
 **Zeeshan Nisar, Thomas Lampert — Computers in Biology and Medicine, 2025**
 
-> 🟦 **Note:** We are in the process of updating this repository to provide comprehensive materials—including the code, 
-> pre-trained model weights, and step-by-step usage instructions. Everything will be available within 1–2 weeks. 
-> Thanks for patience.
-
-> 🟩 **Available Now:**  
-> - ✅ The complete **code** is now available in this repository.  
-> - ✅ The **pre-trained model weights** can be downloaded here:  [➡️ Download Pre-trained Weights](https://seafile.unistra.fr/d/8a7fd71081644d2f86dc/)  
-> 📌 **Coming Soon:** Detailed instructions for trainin, evaluation, and reproducing the results reported in the paper. 
-
-
 ## Abstract
 <div style="text-align: left">
 Histopathology, the microscopic examination of tissue samples, is essential for disease diagnosis and prognosis. 
@@ -35,7 +25,7 @@ training distribution to public benchmark datasets.
 > - ✅ Detailed instructions for loading and utilising the pre-trained model weights. 
 > - ✅ Full code for training baseline and fine-tuned segmentation models (UNet and UDAGAN) on any external kidney glomeruli dataset, supporting reproduction of published results and generalisation study.
 
-### Self-Supervised Pre-training:
+## Self-Supervised Pre-training:
 
 For pre-training, the UNet encoder is used as the default backbone. However, the codebase is flexible and supports any 
 state-of-the-art CNN or transformer-based deep learning architecture as a backbone. To accelerate training, distributed 
@@ -95,23 +85,21 @@ Once dataset is prepared, use the following scripts for pre-training:
   >   - After completion, run ./train_cross_stain_prediction.sh (both in pre_training/ssl/hr-cs-co/slurm)
 
 
-### Pre-trained Model Weights:
+## Pre-trained Model Weights:
 If you prefer to bypass the pre-training step, the pre-trained model weights for all self-supervised models, trained on our in-house renal pathology dataset, are available for download: [➡️ Download Pre-trained Weights](https://seafile.unistra.fr/d/8a7fd71081644d2f86dc/).
-
-### Using Pre-trained Weights:
 After downloading, use the following scripts to load and integrate them into any of the desired downstream tasks, such as classification or segmentation, with a particular focus on renal pathology datasets.
-> - **SimCLR:** ./load_simclr_weights.sh (pre_training/ssl_pretrained_models/slurm)
-> - **BYOL:** ./load_byol_weights.sh (pre_training/ssl_pretrained_models/slurm)
-> - **HR-CS-CO:** ./load_hrcsco_weights.sh (pre_training/ssl_pretrained_models/slurm)
+> - **SimCLR:** ./load_simclr_weights.sh (available in pre_training/ssl_pretrained_models/slurm)
+> - **BYOL:** ./load_byol_weights.sh (available in pre_training/ssl_pretrained_models/slurm)
+> - **HR-CS-CO:** ./load_hrcsco_weights.sh (available in pre_training/ssl_pretrained_models/slurm)
 
-### Reproducing Results / Downstream Tasks Employed in Paper:
-As demonstrated in the paper, the pre-trained weights were utilised for two primary downstream tasks using different proportions of labelled data (1%, 5%, 10%, and 100%). The following scripts facilitate the reproduction of the results reported in the paper:
-> - Kidney Glomeruli Segmentation using UNet: 
->   - Use labels from each stain for training and evaluation.
->   - Respective training scripts to train baseline and finetune models are available in ```downstream_tasks/unet/slurm```
->   - Also used for generalisation study on public datasets (HuBMAP, KPIs)
+## Downstream Tasks Employed in Paper / Reproducing Results:
+As detailed in the paper, pre-trained weights were applied to two segmentation-based downstream tasks, each evaluated with varying proportions of labelled data (1%, 5%, 10%, and 100%). The following scripts enable the reproduction of the reported results:
+> - **Kidney Glomeruli Segmentation with UNet:** 
+>   - Use labels from all stains.
+>   - Training scripts for respective baseline and finetune models are available in ```downstream_tasks/unet/slurm```. For different stains, configuration files are updated with different staincode.
+>   - This setup was also used for generalisation study on public benchmark datasets (HuBMAP, KPIs)
 
 
-> - Kidney Glomeruli Segmentation using UDAGAN: 
->   - Use labels from only one source (PAS, staincode:02) stain for training and evaluation.
->   - Respective training scripts to train baseline and finetune UDAGAN models are available in ```downstream_tasks/udagan/slurm```
+> - **Kidney Glomeruli Segmentation using UDAGAN:** 
+>   - Use labels from only one source (PAS, staincode:02) stain.
+>   - Training and fine-tuning scripts are available in ```downstream_tasks/udagan/slurm```

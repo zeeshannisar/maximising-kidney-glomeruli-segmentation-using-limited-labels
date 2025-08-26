@@ -24,91 +24,6 @@
       <change beforePath="$PROJECT_DIR$/../domain_shift/unpaired_styleTransfer_models/domain_shift_metric/venv/lib64" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/udagan/code/apply_udagan.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/udagan/code/apply_udagan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/udagan/code/pixel_based_evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/udagan/code/pixel_based_evaluation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/udagan/code/rename_model_edited.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/udagan/code/rename_model_edited.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/baseline_unet/code/rename_model_edited.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/baseline_unet/code/rename_model_edited.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/baseline_unet/code/resume_train_unet.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/baseline_unet/code/resume_train_unet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/baseline_unet/code/train_unet.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/baseline_unet/code/train_unet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/baseline_unet/code/unet/unet_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/baseline_unet/code/unet/unet_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/apply_unet.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/apply_unet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/augmentation/live_augmentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/augmentation/live_augmentation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/pixel_based_evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/pixel_based_evaluation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/resume_train_unet.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/resume_train_unet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/train_unet.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_hr-cs-co/code/train_unet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_simclr_and_byol/code/apply_unet.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_simclr_and_byol/code/apply_unet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_simclr_and_byol/code/apply_unet_csco.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_simclr_and_byol/code/apply_unet_csco.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_simclr_and_byol/code/pixel_based_evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_simclr_and_byol/code/pixel_based_evaluation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_simclr_and_byol/code/rename_model_edited.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_simclr_and_byol/code/rename_model_edited.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_simclr_and_byol/code/resume_train_unet.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_simclr_and_byol/code/resume_train_unet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_simclr_and_byol/code/train_unet.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_simclr_and_byol/code/train_unet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_simclr_and_byol/code/unet/unet_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/downstream_tasks/unet/unet_with_simclr_and_byol/code/unet/unet_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/byol/code/check_partially_trained.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/byol/code/config_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/byol/code/configuration_files/byol.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/byol/code/contrastive_loss.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/byol/code/dataloader/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/byol/code/dataloader/augmentations.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/byol/code/dataloader/pillow_API.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/byol/code/deepmodels/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/byol/code/deepmodels/subclass_API.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/byol/code/helper/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/byol/code/helper/copy_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/byol/code/optimizer/LARS_optimizer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/byol/code/optimizer/LR_decay.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/byol/code/optimizer/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/byol/code/plot.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/byol/code/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/byol/code/tf_dataloader_API.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/byol/code/train_byol_multipleGPUs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/byol/code/train_byol_using_avg_grads_singleGPU.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/byol/slurm/train_byol.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/config_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/configuration_files/CS.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/configuration_files/CSCO.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/custom_callbacks/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/custom_callbacks/early_stopping.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/custom_callbacks/reduce_learning_rate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/dataloader/augmentations.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/dataloader/pillow_API.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/deepmodels/functional_API.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/deepmodels/subclass_API.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/plot.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/staintools/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/staintools/stain_augmentor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/staintools/stain_extractors/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/staintools/stain_extractors/abc_stain_extractor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/staintools/stain_extractors/macenko_stain_extractor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/staintools/stain_extractors/ruifrokjohnston_stain_extractor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/staintools/stain_extractors/vahadane_stain_extractor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/staintools/stain_normalizer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/staintools/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/staintools/utils/brightness_standardizer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/staintools/utils/misc_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/tensorboard_API.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/tf_dataloader_API.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/tf_dataloader_API_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/train_CS.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/train_CSCO.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/train_CSCO_multiGPUs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/code/validate_CS_output.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/slurm/train_contrastive_learning.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/hr-cs-co/slurm/train_cross_stain_prediction.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/simclr/code/check_partially_trained.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/simclr/code/config_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/simclr/code/configuration_files/simclr.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/simclr/code/contrastive_loss.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/simclr/code/dataloader/augmentations.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/simclr/code/dataloader/pillow_API.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/simclr/code/deepmodels/functional_API.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/simclr/code/helper/copy_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/simclr/code/optimizer/LARS_optimizer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/simclr/code/optimizer/LR_decay.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/simclr/code/tensorboard_API.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/simclr/code/tf_dataloader_API.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/simclr/code/train_simclr_multipleGpus.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/simclr/code/train_simclr_multipleGpus_multipleNodes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre-training/simclr/slurm/train_simclr.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../segmentation/ki_uNet/Ki_UNet/venv/bin/python" beforeDir="false" afterPath="$PROJECT_DIR$/../segmentation/ki_uNet/Ki_UNet/venv/bin/python" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../segmentation/ki_uNet/Ki_UNet/venv/bin/python3" beforeDir="false" afterPath="$PROJECT_DIR$/../segmentation/ki_uNet/Ki_UNet/venv/bin/python3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../segmentation/ki_uNet/Ki_UNet/venv/bin/python3.8" beforeDir="false" afterPath="$PROJECT_DIR$/../segmentation/ki_uNet/Ki_UNet/venv/bin/python3.8" afterDir="false" />
@@ -196,7 +111,7 @@
       <workItem from="1755762048499" duration="6156000" />
       <workItem from="1756111506497" duration="6651000" />
       <workItem from="1756200642177" duration="4295000" />
-      <workItem from="1756205575815" duration="3479000" />
+      <workItem from="1756205575815" duration="4076000" />
     </task>
     <servers />
   </component>
