@@ -29,13 +29,13 @@ training distribution to public benchmark datasets.
 
 For pre-training, the UNet encoder is used as the default backbone. However, the codebase is flexible and supports any 
 state-of-the-art CNN or transformer-based deep learning architecture as a backbone. To accelerate training, distributed 
-multi-GPU support is implemented using ```TensorFlow v2```. To set up the exact similar environment, install all 
+multi-GPU support is implemented using ```TensorFlow v2```. To set up the environment, install all 
 dependencies with:
 ```
 pip install -r requirements.txt
 ```
 **Dataset Structure:**
-Organize your dataset as shown below, supporting multiple domains with varying numbers of images:
+Organize your dataset as shown below, supporting multiple domains (stains) with varying numbers of images:
 ```
 ____SSL
     ├──random_patches/colour
@@ -68,7 +68,7 @@ ____SSL
 **Stain Codes Reference:**
 In this repository, different stain codes are used to represent various stainings in the dataset:
 
-> - 02: PSA stain
+> - 02: PAS stain
 > - 03: Jones HE
 > - 32: Sirius Red
 > - 16: CD68
@@ -76,7 +76,7 @@ In this repository, different stain codes are used to represent various staining
 
 **Training Scripts:** 
 
-Once dataset is prepared, use the following scripts for pre-training:
+Once the dataset has been prepared as described above, use the following scripts for pre-training:
 
 > - **SimCLR:** ./train_simclr.sh (pre_training/ssl/simclr/slurm)
 > - **BYOL:** ./train_byol.sh (pre_training/ssl/byol/slurm)
@@ -92,14 +92,14 @@ After downloading, use the following scripts to load and integrate them into any
 > - **BYOL:** ./load_byol_weights.sh (available in pre_training/ssl_pretrained_models/slurm)
 > - **HR-CS-CO:** ./load_hrcsco_weights.sh (available in pre_training/ssl_pretrained_models/slurm)
 
-## Downstream Tasks Employed in Paper / Reproducing Results:
+## Downstream Tasks Employed in the Paper / Reproducing Results:
 As detailed in the paper, pre-trained weights were applied to two segmentation-based downstream tasks, each evaluated with varying proportions of labelled data (1%, 5%, 10%, and 100%). The following scripts enable the reproduction of the reported results:
 > - **Kidney Glomeruli Segmentation with UNet:** 
->   - Use labels from all stains.
+>   - Uses labels from all stains.
 >   - Training scripts for respective baseline and finetune models are available in ```downstream_tasks/unet/slurm```. For different stains, configuration files are updated with different staincode.
->   - This setup was also used for generalisation study on public benchmark datasets (HuBMAP, KPIs)
+>   - This setup was also used for the generalisation study on public benchmark datasets (HuBMAP, KPIs).
 
 
 > - **Kidney Glomeruli Segmentation using UDAGAN:** 
->   - Use labels from only one source (PAS, staincode:02) stain.
->   - Training and fine-tuning scripts are available in ```downstream_tasks/udagan/slurm```
+>   - Use labels from only one source stain (in our experiments PAS, staincode:02).
+>   - Training and fine-tuning scripts are available in ```downstream_tasks/udagan/slurm```.
