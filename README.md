@@ -101,5 +101,5 @@ As detailed in the paper, pre-trained weights were applied to two segmentation-b
 
 
 > - **Kidney Glomeruli Segmentation using UDAGAN:** 
->   - Use labels from only one source stain (in our experiments PAS, staincode:02).
+>   - Uses labels from only one source stain (in our experiments PAS, staincode:02).
 >   - Training and fine-tuning scripts are available in ```downstream_tasks/udagan/slurm```.
